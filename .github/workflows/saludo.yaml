@@ -15,8 +15,8 @@ jobs:
     steps:
       - name: saludo desde main
         if: github.ref == 'refs/heads/main'
-        run: echo "Hola desde main, soy $nombre$"
+        run: echo "Hola desde main, soy $nombre"
         
       - name: saludo desde develop
-        if: github.ref == 'refs/heads/main'
-        run: echo "Hola desde develop, soy $nombre$"
+        if: github.ref == 'refs/heads/develop'
+        run: echo "Hola desde develop, soy $nombre"
