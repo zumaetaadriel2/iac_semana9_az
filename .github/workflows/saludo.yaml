@@ -6,12 +6,11 @@ on:
       - main
       - develop
 
-env:
-  nombre: "Adriel Zumaeta"
-
 jobs:
   saludo:
     runs-on: ubuntu-latest
+    env:
+      nombre: "Adriel Zumaeta"
     steps:
       - name: saludo desde main
         if: github.ref == 'refs/heads/main'
